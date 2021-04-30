@@ -21,6 +21,7 @@ public class DatasetConfig {
 		DatasetRepositoryFactory datasetRepositoryFactory = new DatasetRepositoryFactory();
 		datasetRepositoryFactory.setConf(hadoopConfiguration);
 		datasetRepositoryFactory.setBasePath("/user/spring");
+		datasetRepositoryFactory.setNamespace("default");
 		return datasetRepositoryFactory;
 	}
 
